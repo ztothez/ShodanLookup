@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Shodan Lookup",
+  "description": "Shodan Lookup",
+  "version": "1.7",
+  "icons": {
+    "48": "icon48.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "48": "icon48.png"
+    },
+    "default_title": "Shodan Lookup"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{a1b2c3d4-e5f6-7890-ab12-cd34ef567890}"
+    }
+  }
+}
