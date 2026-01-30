@@ -34,3 +34,10 @@ Shodan Lookup is an open-source browser extension that enables fast, context-men
 This project is licensed under the MIT License.
 Source code:  
 [https://github.com/ztothez/ShodanLookup](https://github.com/ztothez/ShodanLookup)
+
+## Privacy Policy
+
+This extension does not collect, store, or track personal data.  
+For full details, see the privacy policy below.
+
+[Privacy Policy](https://ztothez.github.io/ShodanLookup/)
