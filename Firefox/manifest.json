@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Shodan Lookup",
   "description": "Shodan Lookup",
-  "version": "2.0",
+  "version": "2.1",
 
   "icons": {
     "16": "images/icon16.png",
@@ -17,7 +17,9 @@
 
   "permissions": [
     "contextMenus",
-    "tabs"
+    "tabs",
+    "notifications",
+    "activeTab"
   ],
 
   "action": {
@@ -27,6 +29,15 @@
       "32": "images/icon32.png",
       "48": "images/icon48.png",
       "128": "images/icon128.png"
+    }
+  },
+
+  "commands": {
+    "lookup-current-tab": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "Search current tab's domain on Shodan"
     }
   },
 

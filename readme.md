@@ -5,14 +5,25 @@ Shodan Lookup is an open-source browser extension that enables fast, context-men
 ## Features
 - **Context menu integration**  
     Search selected text directly on Shodan.
-    
+
+- **Keyboard shortcut**
+    Press `Alt+Shift+S` to search the current tab's domain.
+
 - **Automatic input handling**
     - IP addresses open Shodan host pages
     - Domains open Shodan domain pages
+    - CVE IDs (e.g. `CVE-2024-6387`) route to a Shodan search
+    - Shodan facet shorthand (e.g. `port:443`, `org:"Google"`) routes to a Shodan search
     - Other input is treated as a general search query
         
 - **No background queries**  
     All searches are strictly user-initiated.
+
+## What's New (v1.3 / 2.1)
+* Both builds now share the same detection logic: CVE patterns, full-URL hostname extraction, and IP/domain validation
+* New support for Shodan facet shorthand (`port:`, `org:`, `net:`, `product:`, and more)
+* New `Alt+Shift+S` shortcut to search the current tab's domain
+* Consistent error notifications on invalid input across Chrome and Firefox
 
 ## Usage
 1. Highlight text on a webpage.
@@ -21,7 +32,8 @@ Shodan Lookup is an open-source browser extension that enables fast, context-men
 
 ## Permissions
 - **Context menus**
-- **Tabs**
+- **Tabs / activeTab**
+- **Notifications**
     
 ## Installation
 - **Firefox Add-ons**  
